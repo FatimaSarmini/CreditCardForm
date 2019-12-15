@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card Details"
+            android:layout_marginBottom="40dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="-0.25dp"
+            android:drawableRight="@drawable/ic_card_number"
+            android:hint="Card number"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0.25dp"
+            android:orientation="horizontal"
+            tools:ignore="NegativeMargin">
+
+            <EditText
+                android:id="@+id/cardDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="-0.25dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_card_date"
+                android:hint="MM/YY"
+                android:inputType="date"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/cardCVVEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="-0.25dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_card_cvc"
+                android:hint="CVV"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/FullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="-0.25dp"
+            android:drawableRight="@drawable/ic_person_black_24dp"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_background_green"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:text="SUBMIT"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
